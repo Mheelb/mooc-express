@@ -1,0 +1,52 @@
+{
+    "produits": [
+        {
+            "id": 1,
+            "title": "Lettre à Elise",
+            "band": "Ludwig van Beethoven",
+            "image": "pic01"
+        },
+        {
+            "id": 2,
+            "title": "Les Indes Galantes",
+            "band": "Rameau",
+            "image": "pic02"
+        },
+        {
+            "id": 3,
+            "title": "Trois Gymnopédies",
+            "band": "Satie",
+            "image": "pic03"
+        },
+        {
+            "id": 4,
+            "title": "Carmina Burana",
+            "band": "Carl Orff",
+            "image": "pic04"
+        },
+        {
+            "id": 5,
+            "title": "Nocturne",
+            "band": "Frédéric Chopin",
+            "image": "pic05"
+        },
+        {
+            "id": 6,
+            "title": "Boléro",
+            "band": "Ravel",
+            "image": "pic06"
+        },
+        {
+            "id": 7,
+            "title": "Symphonie Fantastique",
+            "band": "Hector Berlioz",
+            "image": "pic07"
+        },
+        {
+            "id": 8,
+            "title": "Danses Hongroises",
+            "band": "Johannes Brahms",
+            "image": "pic08"
+        }
+    ]
+}

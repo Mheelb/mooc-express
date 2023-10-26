@@ -1,0 +1,43 @@
+<footer id="footer">
+    <div class="inner">
+        <section>
+            <h2>Postez votre message</h2>
+            <form method="post" action="/contact">
+                <div class="fields">
+                    <div class="field half">
+                        <input type="text" name="name" id="no" placeholder="Nom" />
+                    </div>
+                    <div class="field half">
+                        <input type="email" name="email" id="email" placeholder="Email" />
+                    </div>
+                    <div class="field">
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Envoyer" class="primary" /></li>
+                </ul>
+            </form>
+        </section>
+        <section>
+            <h2>Follow</h2>
+            <ul class="icons">
+                <% socials.forEach(social=> { %>
+                    <li>
+                        <a href="<%=social.url%>" class="icon brands style2 <%=social.class%>" target="_blank">
+                            <span class="label">
+                                <%=social.label%>
+                            </span>
+                        </a>
+                    </li>
+                <%});%>
+            </ul>
+        </section>
+        <ul class="copyright">
+            <li>&copy; Untitled. All rights reserved</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+</footer>
+
+</div>

@@ -1,0 +1,19 @@
+<h1>
+    <%= title %>
+</h1>
+<p>
+    <h2>Voici tous les messages envoyés</h2>
+        <ul>
+            <% if (contacts.length > 0) { %>
+                <% contacts.forEach(contact=> { %>
+                    <li>    
+                        <%=contact.name%> (<%=contact.email%>) : <%=contact.message%>
+                    </li>
+                <%});%>
+            <% } else { %>
+                <li>
+                    Aucun message n'a été envoyé pour le moment
+                </li>
+            <% }; %>
+        </ul>
+</p>

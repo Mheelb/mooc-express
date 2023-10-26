@@ -1,0 +1,31 @@
+<h1>
+    <%= title %>
+</h1>
+<p>
+    <% if(message) { %>
+        <h2>Votre demande n'a pas abouti</h2>
+        <ul>
+            <% message.forEach(erreur=> { %>
+                <li style="color: red">
+                    <%=erreur.msg%>
+                </li>
+                <%});%>
+        </ul>
+        <% } else { %>
+            <h2>Nous avons bien reçu votre message</h2>
+            Cher <%= actualContact.name %> nous avons reçu votre message. (<%= actualContact.email %>)
+            <h2>Voici tout les précédents messages</h2>
+            <ul>
+                <li>
+                    <%=actualContact.name%> (<%=actualContact.email%>) : <%=actualContact.message%>
+                </li>
+                <% if (contacts.length > 0) { %>
+                    <% contacts.forEach(contact=> { %>
+                        <li>    
+                            <%=contact.name%> (<%=contact.email%>) : <%=contact.message%>
+                        </li>
+                    <%});%>
+                <% }; %>
+            </ul>
+        <% }; %>
+</p>
